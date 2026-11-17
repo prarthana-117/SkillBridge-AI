@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard · SkillBridge AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22%3E%3Crect width=%2224%22 height=%2224%22 rx=%226%22 fill=%22%230284c7%22/%3E%3Cpath d=%22M4 17h16M6 17v-4a6 6 0 0 1 12 0v4%22 stroke=%22white%22 stroke-width=%222%22 fill=%22none%22/%3E%3C/svg%3E">
+</head>
+<body>
+  <div class="topbar-mobile">
+    <button id="menuBtn" aria-label="Open menu"><i data-icon="menu" data-size="22"></i></button>
+    <a href="/" class="logo"><span class="logo-mark"><i data-icon="logo" data-size="20"></i></span>SkillBridge<b>AI</b></a>
+    <span style="width:28px"></span>
+  </div>
+
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <a href="/" class="logo"><span class="logo-mark"><i data-icon="logo" data-size="20"></i></span>SkillBridge<b>AI</b></a>
+      <nav class="side-nav" id="sideNav">
+        <button data-view="dashboard"><span class="ni"><i data-icon="home"></i></span>Dashboard</button>
+        <button data-view="profile"><span class="ni"><i data-icon="user"></i></span>My Profile & Skills</button>
+        <button data-view="gap"><span class="ni"><i data-icon="target"></i></span>Skill Gap Analysis</button>
+        <button data-view="roadmap"><span class="ni"><i data-icon="map"></i></span>Learning Roadmap</button>
+        <button data-view="resume"><span class="ni"><i data-icon="file"></i></span>Resume Analyzer</button>
+        <button data-view="interview"><span class="ni"><i data-icon="mic"></i></span>Interview Coach</button>
+        <button data-view="jobs"><span class="ni"><i data-icon="briefcase"></i></span>Job Matches</button>
+        <button data-view="mentor"><span class="ni"><i data-icon="sparkles"></i></span>AI Mentor</button>
+      </nav>
+      <div class="side-user">
+        <strong id="userName">…</strong>
+        <span class="muted" id="userEmail"></span>
+        <div style="margin-top:.6rem"><button class="btn ghost sm" id="logoutBtn"><i data-icon="logout" data-size="15"></i>Log out</button></div>
+      </div>
+    </aside>
+
+    <main class="main" id="view"><div class="loading">Loading…</div></main>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
