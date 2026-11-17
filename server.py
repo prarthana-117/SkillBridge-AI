@@ -301,7 +301,7 @@ def mentor_context(user, profile, completed):
 
 def main():
     db.init_db()
-    server = ThreadingHTTPServer(("127.0.0.1", PORT), SkillBridgeHandler)
+    server = ThreadingHTTPServer(("0.0.0.0", PORT), SkillBridgeHandler)
     print(f"SkillBridge AI running at http://localhost:{PORT}", flush=True)
     ai_status = llm.status()
     print(f"AI engine: Claude ({ai_status['model']})" if ai_status["enabled"]
