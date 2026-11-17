@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillBridge AI — Bridge the gap to your dream career</title>
+  <meta name="description" content="SkillBridge AI analyzes your skills, finds the gaps for your dream role and builds a personalized roadmap, resume feedback and interview practice.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22%3E%3Crect width=%2224%22 height=%2224%22 rx=%226%22 fill=%22%230284c7%22/%3E%3Cpath d=%22M4 17h16M6 17v-4a6 6 0 0 1 12 0v4%22 stroke=%22white%22 stroke-width=%222%22 fill=%22none%22/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo"><span class="logo-mark"><i data-icon="logo" data-size="20"></i></span>SkillBridge<b>AI</b></a>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#roles">Careers</a>
+        <a href="login.html" id="navLogin">Log in</a>
+        <a href="register.html" class="btn sm" id="navCta">Get started free</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow"><i data-icon="sparkles" data-size="14"></i> AI career co-pilot for students & switchers</span>
+          <h1>Bridge the gap between <span class="grad">what you know</span> and the job you want.</h1>
+          <p class="lead">SkillBridge AI measures your skills against real role requirements, shows exactly what's missing,
+            and builds a week-by-week plan — plus resume scoring, mock interviews and job matching.</p>
+          <div class="hero-actions">
+            <a href="register.html" class="btn lg">Analyze my skills →</a>
+            <a href="#how" class="btn lg ghost">See how it works</a>
+          </div>
+          <p class="hero-note">Free · No credit card · Takes 2 minutes</p>
+          <div class="trust">
+            <div><strong>10</strong>career paths</div>
+            <div><strong>34</strong>tracked skills</div>
+            <div><strong>50+</strong>interview questions</div>
+            <div><strong>Claude</strong>AI mentor &amp; grading</div>
+          </div>
+        </div>
+
+        <div class="card preview" aria-label="Sample readiness report">
+          <div class="preview-head">
+            <div class="ring sm" id="heroRing"></div>
+            <div>
+              <div class="muted small">Readiness for</div>
+              <strong>Data Scientist</strong>
+              <div class="chips" style="margin-top:.4rem"><span class="chip warn">4 gaps</span><span class="chip primary">~14 weeks</span></div>
+            </div>
+          </div>
+          <div class="preview-row"><span>Python</span><div class="bar"><span style="width:80%"></span></div><span class="chip good">✓</span></div>
+          <div class="preview-row"><span>Statistics</span><div class="bar"><span style="width:50%"></span></div><span class="chip warn">2/4</span></div>
+          <div class="preview-row"><span>Machine Learning</span><div class="bar"><span style="width:25%"></span></div><span class="chip warn">1/4</span></div>
+          <div class="preview-row"><span>SQL</span><div class="bar"><span style="width:66%"></span></div><span class="chip warn">2/3</span></div>
+          <div class="preview-row"><span>Pandas</span><div class="bar"><span style="width:0%"></span></div><span class="chip bad">0/4</span></div>
+          <div class="preview-next">
+            <div class="small eyebrow-sm"><i data-icon="compass" data-size="14"></i> NEXT STEP</div>
+            <strong class="small">Learn Pandas & NumPy — None → Advanced (15h)</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block alt" id="features">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Platform</span>
+          <h2>Everything you need to get job-ready</h2>
+          <p class="muted">Six AI-powered tools that work together from one profile.</p>
+        </div>
+        <div class="grid features">
+          <div class="card feature"><div class="ico"><i data-icon="target" data-size="22"></i></div><h3>Skill Gap Analyzer</h3><p>Rate your skills once. See a readiness score and exactly which skills are missing or weak for your target role.</p></div>
+          <div class="card feature"><div class="ico"><i data-icon="map" data-size="22"></i></div><h3>Personalized Roadmap</h3><p>A week-by-week plan built around your free hours, with free resources and portfolio projects for every gap.</p></div>
+          <div class="card feature"><div class="ico"><i data-icon="file" data-size="22"></i></div><h3>Resume Analyzer</h3><p>Paste your resume to get an ATS-style score, detected skills, missing keywords and concrete fixes.</p></div>
+          <div class="card feature"><div class="ico"><i data-icon="mic" data-size="22"></i></div><h3>Interview Coach</h3><p>Practice technical and behavioral questions for your role. Claude grades each answer and shows a model response.</p></div>
+          <div class="card feature"><div class="ico"><i data-icon="briefcase" data-size="22"></i></div><h3>Job Matching</h3><p>See how well you match each opening, which skills you already have and what to learn to qualify.</p></div>
+          <div class="card feature"><div class="ico"><i data-icon="sparkles" data-size="22"></i></div><h3>AI Mentor</h3><p>Chat with a Claude-powered mentor that knows your skills, gaps and roadmap — and gives specific next steps.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="how">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">How it works</span>
+          <h2>From first step to first offer</h2>
+          <p class="muted">From "where do I start?" to "I'm ready to apply" in four steps.</p>
+        </div>
+        <div class="grid steps">
+          <div class="card step"><h3>Pick a target role</h3><p>Choose from 10 in-demand careers — developer, data, AI, cloud, security, design and product.</p></div>
+          <div class="card step"><h3>Rate your skills</h3><p>Self-rate in seconds, or let the Resume Analyzer detect your skills automatically.</p></div>
+          <div class="card step"><h3>Follow your roadmap</h3><p>Tick off tasks each week. Your readiness score rises as you complete skills.</p></div>
+          <div class="card step"><h3>Practice & apply</h3><p>Rehearse interviews, polish your resume and apply to jobs you now match.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block alt" id="roles">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Career paths</span>
+          <h2>Careers you can bridge into</h2>
+          <p class="muted">Each role maps to a weighted set of core, important and bonus skills.</p>
+        </div>
+        <div class="grid roles-grid" id="rolesGrid"></div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="container">
+        <div class="cta">
+          <h2>Your dream job is a roadmap away.</h2>
+          <p>Create a free account and get your skill-gap report in under two minutes.</p>
+          <a href="register.html" class="btn lg">Start my free analysis</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="container">
+      <a href="/" class="logo"><span class="logo-mark"><i data-icon="logo" data-size="20"></i></span>SkillBridge<b>AI</b></a>
+      <span>© 2026 SkillBridge AI · Helping learners close the skills gap.</span>
+    </div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script>
+    document.getElementById("heroRing").innerHTML = ringSvg(46, 110, "Ready");
+
+    fetch("/api/catalog").then(r => r.json()).then(c => {
+      document.getElementById("rolesGrid").innerHTML = c.roles.map(r => `
+        <div class="card role-mini">
+          ${roleIcon(r.id, 20)}
+          <div><h4>${esc(r.title)}</h4><p>${esc(r.summary)}</p></div>
+        </div>`).join("");
+    });
+
+    // Logged-in visitors go straight to their dashboard.
+    fetch("/api/me").then(r => {
+      if (r.ok) {
+        document.getElementById("navLogin").classList.add("hidden");
+        const cta = document.getElementById("navCta");
+        cta.textContent = "Open dashboard";
+        cta.href = "app.html";
+      }
+    });
+  </script>
+</body>
+</html>
